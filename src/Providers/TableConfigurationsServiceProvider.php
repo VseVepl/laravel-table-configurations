@@ -40,7 +40,7 @@ class TableConfigurationsServiceProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__ . '/../Database/Migrations');
 
         // Load views from the package and set namespace
-        $this->loadViewsFrom(__DIR__ . '/../Resources/views', 'table-configurations');
+        $this->loadViewsFrom(__DIR__ . '/../../../resources/views', 'table-configurations');
 
         // Load routes from the package
         $this->loadRoutesFrom(__DIR__ . '/../Routes/web.php');
