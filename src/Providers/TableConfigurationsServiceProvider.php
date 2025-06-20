@@ -68,7 +68,7 @@ class TableConfigurationsServiceProvider extends ServiceProvider
             ], 'table-configurations-migrations');
 
             $this->publishes([
-                __DIR__ . '/../Resources/views' => resource_path('views/vendor/table-configurations'),
+                __DIR__ . '/../../../Resources/views' => resource_path('views/vendor/table-configurations'),
             ], 'table-configurations-views');
 
             // You can also publish assets, lang files etc.
