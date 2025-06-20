@@ -73,7 +73,7 @@ class TableConfigurationsServiceProvider extends ServiceProvider
 
             // You can also publish assets, lang files etc.
             // $this->publishes([
-            //     __DIR__.'/../Resources/assets' => public_path('vendor/table-configurations'),
+            //     __DIR__.'/../../../Resources/assets' => public_path('vendor/table-configurations'),
             // ], 'table-configurations-assets');
 
             // $this->publishes([
