@@ -40,7 +40,7 @@ class TableConfigurationsServiceProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__ . '/../Database/Migrations');
 
         // Load views from the package and set namespace
-        $this->loadViewsFrom(__DIR__ . '/../../../resources/views', 'table-configurations');
+        $this->loadViewsFrom(__DIR__ . '/../../resources/views', 'table-configurations');
 
         // Load routes from the package
         $this->loadRoutesFrom(__DIR__ . '/../Routes/web.php');
@@ -68,7 +68,7 @@ class TableConfigurationsServiceProvider extends ServiceProvider
             ], 'table-configurations-migrations');
 
             $this->publishes([
-                __DIR__ . '/../../../resources/views' => resource_path('views/vendor/table-configurations'),
+                __DIR__ . '/../../resources/views' => resource_path('views/vendor/table-configurations'),
             ], 'table-configurations-views');
 
             // You can also publish assets, lang files etc.
