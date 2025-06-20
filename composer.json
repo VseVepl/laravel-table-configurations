@@ -1,0 +1,40 @@
+{
+    "name": "vsent/laravel-table-configurations",
+    "description": "A Laravel package to manage dynamic table column configurations.",
+    "keywords": [
+        "laravel",
+        "package",
+        "table",
+        "configurations",
+        "livewire",
+        "volt"
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "vsent\\TableConfigurations\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "vsent\\TableConfigurations\\Providers\\TableConfigurationsServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^10.0 || ^11.0 || ^12.0",
+        "livewire/livewire": "^3.0",
+        "livewire/volt": "^1.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0",
+        "pestphp/pest": "^2.0"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
